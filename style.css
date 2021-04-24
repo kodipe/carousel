@@ -10,7 +10,6 @@
 
 .track {
     display: flex;
-    transition: .3s ease transform;
 }
 
 /* Domain */
@@ -22,19 +21,17 @@ body {
 
 .item {
     padding: 0 20px;
-    transition: .3s ease transform;
+    opacity: 0;
 }
 
 .item span {
     display: block;
     height: 100px;
     border: 1px solid #DDDDDD;
-    transition: .3s ease transform, .3s ease z-index, .3s ease opacity;
     background: #FFFFFF;
     position: relative;
     z-index: 0;
     padding: 20px;
-    opacity: 0;
 }
 
 .item span:hover {
@@ -42,6 +39,6 @@ body {
     z-index: 10;
 }
 
-.item.active span {
+.item.active {
     opacity: 1;
 }
