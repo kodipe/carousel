@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="carousel">
+            <div class="item">
+                <span>A</span>
+            </div>
+            <div class="item">
+                <span>B</span>
+            </div>
+            <div class="item">
+                <span>C</span>
+            </div>
+            <div class="item">
+                <span>D</span>
+            </div>
+            <div class="item">
+                <span>E</span>
+            </div>
+            <div class="item">
+                <span>F</span>
+            </div>
+            <div class="item">
+                <span>G</span>
+            </div>
+            <div class="item">
+                <span>H</span>
+            </div>
+        </div>
+        <script src="./slider.js"></script>
+        <script>
+            const slider = new Slider(document.querySelector(".carousel"), {
+                show: 3,
+                scroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            show: 2,
+                            scroll: 2,
+                        }
+                    }
+                ]
+            });
+        </script>
+    </body>
+</html>
